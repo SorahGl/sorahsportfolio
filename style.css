@@ -1,0 +1,373 @@
+* {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(183, 100%, 20%);
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 25px;
+}
+
+/* HEADER SECTION */
+
+header {
+    position: fixed;
+    background-color: hsl(183, 100%, 30%);
+    color: white;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    padding: 10px;
+}
+header h2 {
+    display: inline;
+    float: left;
+    background-color: hsl(183, 100%, 30%);
+    color: white;
+}
+header li {
+    display: inline;
+    float: right;
+    text-decoration: underline;
+    background-color: hsl(183, 100%, 30%);
+    color: white;
+    margin: 8px;
+    font-weight: bold;
+}
+
+header a {
+    background-color: hsl(183, 100%, 30%);
+    color: white;
+}
+
+header a:hover {
+    text-decoration: underline hsl(183, 100%, 30%);
+    transition: text-decoration 300ms ease-in;
+}
+
+/* BODY DIMENSIONS */
+
+body {
+    position: relative;
+    top: 75px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 600px auto auto 340px 217px;
+    grid-row-gap: 40px;
+}
+
+/* HOME SECTION */
+
+.homesection {
+    grid-area: 1 / 1 / 2 / 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(202, 100%, 89%);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+.homesection i {
+    margin: 30px;
+    display: block;
+    background-color: hsl(202, 100%, 89%);
+    color: hsl(183, 100%, 20%);
+}
+.homesection h1 {
+    display: block;
+    background-color: hsl(202, 100%, 89%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: hsl(183, 100%, 20%);
+    line-height: 60px;
+}
+
+/* ABOUT ME SECTION */
+
+.aboutmesection {
+    grid-area: 2 /2 / 3 / 6;
+    background-color: hsl(143, 45%, 89%);
+    border-radius: 15px;
+}
+
+.aboutmesection h2 {
+    background-color: hsl(143, 45%, 89%);
+    padding-top: 40px;
+    color: hsl(183, 100%, 20%);
+}
+.aboutmecontent {
+    display: flex;
+    background-color: hsl(143, 45%, 89%);
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+.aboutmesection p {
+    background-color: hsl(143, 45%, 89%);
+    
+}
+.aboutmesection img {
+    height: 280px;
+    width: 290px;
+    padding: 5px;
+    padding-bottom: 15px;
+    background-color: transparent; 
+}
+
+.aboutmesection a {
+    background-color: hsl(143, 45%, 89%);
+    font-weight: bold;
+}
+.aboutmesection a:hover {
+    text-decoration: none;
+}
+
+/* PROJECTS SECTION */
+.projectssection {
+    grid-area: 3 /1 / 4 / 7;
+    background-color: hsl(143, 45%, 89%);
+    border-radius: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.projectssection h2 {
+    background-color: hsl(143, 45%, 89%);
+    padding: 30px;
+}
+
+.projectssection img{
+    width: 300px;
+    height: 400px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 2%;
+}
+.projectimage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: hsl(143, 45%, 89%);
+    row-gap: 30px;
+}
+
+.projectimage a {
+    background-color: transparent;
+}
+
+div {
+    background-color: transparent;
+}
+
+.project-div {
+    position: relative; 
+
+}
+
+.info {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 8%;
+    width: 84%;
+    height: 98.5%;
+    border-radius: 2%;
+    background-color: hsla(183, 100%, 30%, 0.9);
+    letter-spacing: 0.7px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    margin-bottom: 18px;
+    transition: all 2s ease-in-out;
+}
+
+.info h3, .info p {
+    background-color: hsla(183, 100%, 30%, 0.65);
+    width: fit-content;
+    color: white;
+    font-weight: bolder;
+    font-size: 1rem;
+    border-radius: 10%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.info h3 {
+    font-size: 28px;
+    line-height: 30px;
+}
+
+.projectButton {
+    background-color: white;
+    color: hsl(183, 100%, 30%);
+    border: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+    bottom: 0px;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: .80rem;
+    text-align: center;
+    text-shadow: .5px .5px .5px #000;
+    border-radius: 10px;
+    box-shadow: 
+        inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+        inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.projectButton:hover {
+    background-color: rgb(220, 220, 220);
+}
+
+.projectButton:active {
+    box-shadow: 
+        inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+        inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: hsl(183, 100%, 35%);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+    
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .styled:hover {
+    background-color: hsl(183, 100%, 30%);
+  }
+  
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+
+/* SKILLS SECTION */
+
+.skillssection {
+    grid-area: 4 /1 / 5 / 7;
+    justify-items: center;
+    align-items: center;
+    background-color: hsl(143, 45%, 89%);
+    border-radius: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.skillssection h2, .skillssection p, .skillssection i {
+    background-color: hsl(143, 45%, 89%);
+}
+
+.skillssection i {
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.skillimage {
+    display: flex;
+    justify-content: space-around;
+    background-color: hsl(143, 45%, 89%);
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+/* CONTACT SECTION */
+
+.contactsection {
+    grid-area: 5 /2 / 6 / 6;
+    background-color: hsl(202, 100%, 89%);
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.contactsection h2, .contactsection p {
+    background-color: hsl(202, 100%, 89%);
+}
+
+.contactsection p {
+    display: flex;
+    justify-content: center;
+}
+.contactsection h2 {
+    padding-top: 30px;
+}
+
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 407px) {
+    .skillssection i {
+        padding: 7px;
+    }
+}
+
+@media screen and (max-width: 915px){
+    .aboutmesection {
+        grid-area: 2 /1 / 3 / 7;
+    }
+    .projectssection, .skillssection, .contactsection{
+        margin: 0px;
+    }
+    .contactsection {
+        grid-column: 1 / 7;
+    } 
+    .projectssection img{
+        width: 250px;
+        height: 350px;
+    }
+    .homesection {
+        flex-direction: column;
+    }
+    .homesection h1 {
+        font-size: 3em;
+    }
+    nav ul {
+        display: none;
+    }
+    
+    .homesection i {
+        font-size: xxxx-large;
+    }
+    
+    
+}
+
+@media screen and (max-width: 1065px){
+    .aboutmecontent{
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .skillssection i {
+        font-size: xxx-large;
+    }
+}
+@media screen and (min-width: 915px) {
+    .info p {
+        margin-bottom: 80px;
+    }
+    
+}
